@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMEF Maria Regina de Sousa | Oportunidade Única de Investimento</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- AOS (Animate On Scroll) Library CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: {
+              DEFAULT: '#0B1D3A',
+              light: '#162F58',
+              dark: '#061021'
+            },
+            brandYellow: {
+              DEFAULT: '#FFC800',
+              hover: '#E6B400',
+              glow: '#FFE380'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-brandYellow selection:text-brandBlue overflow-x-hidden">
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="bg-brandBlue/90 backdrop-blur-md text-white sticky top-0 z-50 border-b border-slate-800 shadow-xl transition-all">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo com Animação Hover -->
+      <a href="#" class="text-xl font-bold tracking-tight flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-brandYellow/10 rounded-xl flex items-center justify-center border border-brandYellow/30 group-hover:bg-brandYellow group-hover:scale-110 transition-all duration-300">
+          <i class="ph ph-graduation-cap text-brandYellow text-2xl group-hover:text-brandBlue transition-colors"></i>
+        </div>
+        <span>EMEF <span class="text-brandYellow">Maria Regina</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+        <a href="#sobre" class="hover:text-brandYellow transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brandYellow hover:after:w-full after:transition-all">Sobre</a>
+        <a href="#diferenciais" class="hover:text-brandYellow transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brandYellow hover:after:w-full after:transition-all">Diferenciais</a>
+        <a href="#expansao" class="hover:text-brandYellow transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brandYellow hover:after:w-full after:transition-all">Plano de Expansão</a>
+        <a href="#investimento" class="hover:text-brandYellow transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brandYellow hover:after:w-full after:transition-all">Retorno</a>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <button onclick="openModal()" class="hidden md:flex items-center gap-2 bg-brandYellow text-brandBlue font-extrabold px-5 py-2.5 rounded-xl hover:bg-brandYellow-hover transition-all shadow-lg shadow-brandYellow/10 active:scale-95 animate-pulse-slow">
+        <i class="ph ph-lightning text-lg"></i>
+        <span>Receber Pitch Deck</span>
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-2xl text-white focus:outline-none">
+        <i class="ph ph-list" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-brandBlue-dark border-t border-slate-800 px-6 py-5 space-y-4">
+      <a href="#sobre" class="block text-slate-300 hover:text-brandYellow transition-colors mobile-link">Sobre</a>
+      <a href="#diferenciais" class="block text-slate-300 hover:text-brandYellow transition-colors mobile-link">Diferenciais</a>
+      <a href="#expansao" class="block text-slate-300 hover:text-brandYellow transition-colors mobile-link">Plano de Expansão</a>
+      <a href="#investimento" class="block text-slate-300 hover:text-brandYellow transition-colors mobile-link">Retorno</a>
+      <button onclick="openModal()" class="w-full flex justify-center items-center gap-2 bg-brandYellow text-brandBlue font-bold px-5 py-3 rounded-xl hover:bg-brandYellow-hover transition-all shadow-md">
+        <i class="ph ph-lightning text-lg"></i>
+        <span>Receber Pitch Deck</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (ANIMADA) ==================== -->
+  <section id="sobre" class="bg-gradient-to-b from-brandBlue via-slate-900 to-slate-900 py-24 px-6 relative overflow-hidden">
+    <!-- Glow Background Effects -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brandBlue-light/30 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-10 right-10 w-80 h-80 bg-brandYellow/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      
+      <!-- Text Side -->
+      <div class="lg:col-span-7 space-y-8 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+        <div class="inline-flex items-center gap-2 bg-slate-800/80 text-brandYellow border border-brandYellow/30 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider backdrop-blur-sm shadow-inner">
+          <i class="ph ph-rocket-launch text-lg animate-bounce"></i> Oportunidade de Alto Impacto & Retorno
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-white">
+          A Revolução da Educação Infantil Tem Nome: <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandYellow via-yellow-200 to-amber-400">Maria Regina</span>
+        </h1>
+        
+        <p class="text-slate-300 text-lg md:text-xl max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+          Unimos metodologia pedagógica de ponta, infraestrutura moderna e um modelo operacional escalável. O investimento certo para quem busca transformar vidas com sustentabilidade financeira.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+          <a href="#investimento" class="inline-flex justify-center items-center gap-3 bg-brandYellow text-brandBlue font-extrabold px-8 py-4 rounded-xl hover:bg-brandYellow-hover transition-all shadow-xl shadow-brandYellow/20 active:scale-95 group">
+            <span>Conhecer o Modelo de Negócio</span>
+            <i class="ph ph-arrow-right font-bold group-hover:translate-x-1 transition-transform"></i>
+          </a>
+          <button onclick="openModal()" class="inline-flex justify-center items-center gap-2 border border-slate-700 bg-slate-800/50 backdrop-blur-md text-slate-200 font-semibold px-6 py-4 rounded-xl hover:bg-slate-800 hover:text-white hover:border-slate-500 transition-all">
+            <i class="ph ph-play-circle text-2xl text-brandYellow"></i>
+            <span>Ver Pitch Interativo</span>
+          </button>
+        </div>
+
+        <!-- Mini Badges -->
+        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800 max-w-lg mx-auto lg:mx-0">
+          <div class="text-center lg:text-left">
+            <p class="text-xs text-slate-400 uppercase font-semibold">Mercado</p>
+            <p class="text-sm font-bold text-white mt-1">Alta Demanda</p>
+          </div>
+          <div class="text-center lg:text-left border-x border-slate-800 px-2">
+            <p class="text-xs text-slate-400 uppercase font-semibold">Tese</p>
+            <p class="text-sm font-bold text-white mt-1">Escola do Futuro</p>
+          </div>
+          <div class="text-center lg:text-left">
+            <p class="text-xs text-slate-400 uppercase font-semibold">ESG</p>
+            <p class="text-sm font-bold text-brandYellow mt-1">100% Alinhado</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Interactive Card Side -->
+      <div class="lg:col-span-5 flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="w-full max-w-md bg-gradient-to-b from-slate-800 to-slate-900 border border-slate-700 rounded-3xl p-6 shadow-2xl relative group hover:border-brandYellow/50 transition-all duration-500">
+          
+          <!-- Card Header Image Area -->
+          <div class="relative w-full h-72 bg-gradient-to-tr from-brandBlue to-slate-800 rounded-2xl overflow-hidden border border-slate-700/50 flex flex-col items-center justify-center p-6 text-center group-hover:scale-[1.02] transition-transform duration-500">
+            
+            <div class="w-20 h-20 bg-brandYellow/10 text-brandYellow rounded-full flex items-center justify-center text-4xl mb-3 shadow-inner border border-brandYellow/20 animate-pulse">
+              <i class="ph ph-buildings"></i>
+            </div>
+            
+            <h3 class="text-xl font-bold text-white tracking-wide">Novo Bloco de Inovação</h3>
+            <p class="text-xs text-slate-300 mt-1">Projeção 3D do Projeto de Expansão 2026-2027</p>
+
+            <!-- Floating Pill Badge -->
+            <div class="absolute top-4 left-4 bg-brandBlue/90 backdrop-blur-md border border-brandYellow/40 text-brandYellow text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              Captação Aberta
+            </div>
+          </div>
+
+          <!-- Quick Stats inside Card -->
+          <div class="mt-6 grid grid-cols-2 gap-3 text-xs">
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+              <span class="text-slate-400 block">Capacidade Extra</span>
+              <strong class="text-white text-sm font-bold mt-0.5 block">+300 Alunos</strong>
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+              <span class="text-slate-400 block">Previsão Payback</span>
+              <strong class="text-brandYellow text-sm font-bold mt-0.5 block">Aceleração Real</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== MÉTRICAS ANIMADAS (COUNTER) ==================== -->
+  <section class="py-16 bg-slate-950 border-y border-slate-800 relative z-20">
+    <div id="metricsSection" class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      
+      <div class="p-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="text-4xl lg:text-5xl font-black text-brandYellow flex justify-center items-center gap-1">
+          <span class="counter" data-target="250">0</span>+
+        </div>
+        <p class="text-slate-400 font-medium text-sm mt-2">Alunos Atendidos Atualmente</p>
+      </div>
+
+      <div class="p-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="text-4xl lg:text-5xl font-black text-white flex justify-center items-center gap-1">
+          <span class="counter" data-target="96">0</span>%
+        </div>
+        <p class="text-slate-400 font-medium text-sm mt-2">Índice de Retenção e Satisfação</p>
+      </div>
+
+      <div class="p-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="text-4xl lg:text-5xl font-black text-brandYellow flex justify-center items-center gap-1">
+          <span class="counter" data-target="100">0</span>%
+        </div>
+        <p class="text-slate-400 font-medium text-sm mt-2">Foco em Formação Socioemocional</p>
+      </div>
+
+      <div class="p-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="text-4xl lg:text-5xl font-black text-white flex justify-center items-center gap-1">
+          <span class="counter" data-target="2">0</span>x
+        </div>
+        <p class="text-slate-400 font-medium text-sm mt-2">Metas de Crescimento em 24 meses</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== DIFERENCIAIS INTERATIVOS ==================== -->
+  <section id="diferenciais" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4" data-aos="fade-up">
+      <h2 class="text-3xl md:text-5xl font-black text-white tracking-tight">
+        Por Que Investir na <span class="text-brandYellow">EMEF Maria Regina</span>?
+      </h2>
+      <p class="text-slate-400 text-base md:text-lg">
+        Combinamos a confiabilidade da educação tradicional com métodos inovadores e sustentabilidade financeira.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-3xl border border-slate-700/60 hover:border-brandYellow transition-all duration-300 hover:-translate-y-2 group shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-16 h-16 bg-brandBlue text-brandYellow rounded-2xl flex items-center justify-center text-3xl mb-6 border border-slate-700 group-hover:bg-brandYellow group-hover:text-brandBlue transition-colors duration-300 shadow-md">
+          <i class="ph ph-brain"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Metodologia Inovadora</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Ensino prático com cultura Maker, robótica e desenvolvimento socioemocional preparando o aluno para as competências do futuro.
+        </p>
+      </div>
+
+      <!-- Card 2 (Destaque) -->
+      <div class="bg-gradient-to-b from-slate-800 to-brandBlue/60 p-8 rounded-3xl border-2 border-brandYellow shadow-2xl relative hover:-translate-y-2 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute -top-3.5 right-6 bg-brandYellow text-brandBlue text-xs font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow">
+          Pilar Principal
+        </div>
+        <div class="w-16 h-16 bg-brandYellow text-brandBlue rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-md">
+          <i class="ph ph-chart-line-up"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Modelo Altamente Escalável</h3>
+        <p class="text-slate-200 text-sm leading-relaxed">
+          Processos otimizados e gestão financeira rigorosa que garantem margem de previsibilidade para ampliação contínua de turmas.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-3xl border border-slate-700/60 hover:border-brandYellow transition-all duration-300 hover:-translate-y-2 group shadow-xl" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-16 h-16 bg-brandBlue text-brandYellow rounded-2xl flex items-center justify-center text-3xl mb-6 border border-slate-700 group-hover:bg-brandYellow group-hover:text-brandBlue transition-colors duration-300 shadow-md">
+          <i class="ph ph-users-three"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Forte Engajamento Comunitário</h3>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Alta reputação regional com fila de espera orgânica por matrículas, reduzindo drasticamente o custo de aquisição de alunos (CAC).
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== TAB DE PLANO DE EXPANSÃO INTERATIVO ==================== -->
+  <section id="expansao" class="bg-slate-950 py-24 px-6 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4" data-aos="fade-up">
+        <h2 class="text-3xl md:text-5xl font-black text-white">Plano Estratégico de Expansão</h2>
+        <p class="text-slate-400">Nossa visão de crescimento estruturada por fases e alocação clara de capital.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Interactive Tabs Navigation -->
+        <div class="lg:col-span-5 space-y-4" data-aos="fade-right">
+          
+          <button onclick="switchTab('infra')" id="tab-infra" class="tab-btn w-full text-left p-6 rounded-2xl border border-brandYellow bg-slate-800 text-white transition-all duration-300 flex items-center gap-4 group">
+            <div class="w-12 h-12 bg-brandYellow/10 rounded-xl flex items-center justify-center text-2xl text-brandYellow group-hover:bg-brandYellow group-hover:text-brandBlue transition-colors">
+              <i class="ph ph-hammer"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">1. Infraestrutura & Obras</h4>
+              <p class="text-xs text-slate-400 mt-1">Ampliação física e novas salas inteligentes</p>
+            </div>
+          </button>
+
+          <button onclick="switchTab('tech')" id="tab-tech" class="tab-btn w-full text-left p-6 rounded-2xl border border-slate-800 bg-slate-900/50 text-slate-400 hover:border-slate-700 transition-all duration-300 flex items-center gap-4 group">
+            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-slate-400 group-hover:text-brandYellow transition-colors">
+              <i class="ph ph-cpu"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">2. Laboratório Maker & Tech</h4>
+              <p class="text-xs text-slate-400 mt-1">Robótica, computação e tecnologia</p>
+            </div>
+          </button>
+
+          <button onclick="switchTab('equipe')" id="tab-equipe" class="tab-btn w-full text-left p-6 rounded-2xl border border-slate-800 bg-slate-900/50 text-slate-400 hover:border-slate-700 transition-all duration-300 flex items-center gap-4 group">
+            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-2xl text-slate-400 group-hover:text-brandYellow transition-colors">
+              <i class="ph ph-chalkboard-teacher"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">3. Capacitação & Equipe</h4>
+              <p class="text-xs text-slate-400 mt-1">Valorização e treinamento docente</p>
+            </div>
+          </button>
+
+        </div>
+
+        <!-- Tab Content Display Card -->
+        <div class="lg:col-span-7 bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-2xl relative min-h-[380px] flex flex-col justify-center" data-aos="fade-left">
+          
+          <!-- Content 1: Infra -->
+          <div id="content-infra" class="tab-content space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brandYellow">Fase 1 - Prioridade Alta</span>
+            <h3 class="text-2xl font-extrabold text-white">Construção do Novo Bloco Pedagógico</h3>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              Investimento destinado à ampliação do prédio principal, criando 6 novas salas adaptadas com climatização, iluminação natural otimizada e acessibilidade completa.
+            </p>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400">Alocação Estimada</span>
+              <span class="text-xl font-black text-brandYellow">50% do Aporte</span>
+            </div>
+          </div>
+
+          <!-- Content 2: Tech -->
+          <div id="content-tech" class="tab-content space-y-6 hidden">
+            <span class="text-xs font-bold uppercase tracking-widest text-brandYellow">Fase 2 - Inovação</span>
+            <h3 class="text-2xl font-extrabold text-white">Laboratório Espaço Maker</h3>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              Aquisição de kits de robótica educacional, impressoras 3D, computadores modernos e plataformas digitais de aprendizagem interativa.
+            </p>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400">Alocação Estimada</span>
+              <span class="text-xl font-black text-brandYellow">30% do Aporte</span>
+            </div>
+          </div>
+
+          <!-- Content 3: Equipe -->
+          <div id="content-equipe" class="tab-content space-y-6 hidden">
+            <span class="text-xs font-bold uppercase tracking-widest text-brandYellow">Fase 3 - Sustentabilidade</span>
+            <h3 class="text-2xl font-extrabold text-white">Qualificação & Capital Operacional</h3>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              Treinamento de professores na metodologia socioemocional, contratação de profissionais qualificados e reserva estratégica de capital de giro.
+            </p>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400">Alocação Estimada</span>
+              <span class="text-xl font-black text-brandYellow">20% do Aporte</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CALCULADORA DE RETORNO / TESES DE INVESTIMENTO ==================== -->
+  <section id="investimento" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="bg-gradient-to-br from-brandBlue via-slate-800 to-slate-900 border border-slate-700 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6" data-aos="fade-right">
+          <span class="bg-brandYellow/10 text-brandYellow border border-brandYellow/30 text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider">
+            Atração de Capital
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            Seja um Investidor Estratégico no Futuro da Educação
+          </h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Estamos abrindo rodada para parceiros e investidores que buscam alinhar rentabilidade com retorno social de alto impacto em nossa comunidade.
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 text-slate-200 text-sm">
+              <i class="ph ph-check-circle text-brandYellow text-xl"></i>
+              <span>Relatórios e prestação de contas transparentes</span>
+            </div>
+            <div class="flex items-center gap-3 text-slate-200 text-sm">
+              <i class="ph ph-check-circle text-brandYellow text-xl"></i>
+              <span>Participação na consolidação da marca de referência</span>
+            </div>
+            <div class="flex items-center gap-3 text-slate-200 text-sm">
+              <i class="ph ph-check-circle text-brandYellow text-xl"></i>
+              <span>Modelo com baixíssimo risco operacional</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulação Card Interativo -->
+        <div class="bg-slate-900/90 p-8 rounded-2xl border border-slate-700 space-y-6 shadow-inner" data-aos="fade-left">
+          <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <i class="ph ph-calculator text-brandYellow"></i> Simule Seu Interesse
+          </h3>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase mb-2">Faixa Pretendida de Aporte</label>
+            <select id="rangeSelect" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-3 outline-none focus:border-brandYellow transition-colors text-sm">
+              <option value="50">Até R$ 50.000 (Anjo / Semente)</option>
+              <option value="150" selected>R$ 50.000 a R$ 150.000 (Expansão)</option>
+              <option value="300">Acima de R$ 150.000 (Estratégico)</option>
+            </select>
+          </div>
+
+          <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50 space-y-2">
+            <div class="flex justify-between text-xs text-slate-400">
+              <span>Impacto Estimado:</span>
+              <span id="impactText" class="text-brandYellow font-bold">+150 Alunos Beneficiados</span>
+            </div>
+            <div class="flex justify-between text-xs text-slate-400">
+              <span>Formato:</span>
+              <span class="text-white font-semibold">Parceria Estratégica</span>
+            </div>
+          </div>
+
+          <button onclick="openModal()" class="w-full bg-brandYellow text-brandBlue font-extrabold py-3.5 rounded-xl hover:bg-brandYellow-hover transition-all shadow-lg active:scale-95">
+            Solicitar Reunião com os Gestores
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FORMULÁRIO DE CAPTURA ==================== -->
+  <section id="contato" class="py-20 px-6 max-w-4xl mx-auto" data-aos="zoom-in">
+    <div class="bg-gradient-to-br from-brandYellow via-yellow-400 to-amber-500 p-8 md:p-12 rounded-3xl shadow-2xl text-brandBlue relative">
+      <div class="text-center space-y-3 max-w-2xl mx-auto mb-8">
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight">Pronto para Investir na EMEF Maria Regina?</h2>
+        <p class="font-medium text-brandBlue/90 text-sm md:text-base">Preencha seus dados para receber o Deck Comercial completo em PDF e nossa equipe entrará em contato.</p>
+      </div>
+
+      <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4 max-w-lg mx-auto">
+        <div>
+          <label class="block text-xs font-extrabold uppercase tracking-wider mb-1">Seu Nome Completo</label>
+          <input type="text" required placeholder="Ex: Ana Souza" class="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-brandBlue outline-none text-slate-900 placeholder:text-slate-400 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-extrabold uppercase tracking-wider mb-1">Seu Melhores E-mail</label>
+          <input type="email" required placeholder="ana@investimentos.com" class="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-brandBlue outline-none text-slate-900 placeholder:text-slate-400 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-extrabold uppercase tracking-wider mb-1">Perfil do Investidor</label>
+          <select required class="w-full px-4 py-3 rounded-xl border-0 focus:ring-2 focus:ring-brandBlue outline-none text-slate-900 text-sm">
+            <option value="" disabled selected>Selecione seu perfil</option>
+            <option value="angel">Investidor Anjo / Pessoa Física</option>
+            <option value="fund">Fundo de Investimento / ESG</option>
+            <option value="partner">Parceiro Institucional</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-brandBlue text-white font-extrabold py-4 rounded-xl hover:bg-brandBlue-dark transition-all shadow-xl text-base mt-2 active:scale-95">
+          Enviar e Acessar Pitch Deck
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-10 px-6 border-t border-slate-900 text-sm">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <div>
+        <p class="font-bold text-white text-base">EMEF Maria Regina de Sousa</p>
+        <p class="text-xs text-slate-500 mt-1">Formando cidadãos e líderes para o futuro com excelência pedagógica.</p>
+      </div>
+      <p class="text-xs text-slate-600">&copy; 2026 EMEF Maria Regina de Sousa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL PITCH DECK ==================== -->
+  <div id="modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-8 shadow-2xl relative space-y-6 animate-scale-up">
+      
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-2xl transition-colors">
+        <i class="ph ph-x"></i>
+      </button>
+
+      <div class="text-center space-y-2">
+        <div class="w-14 h-14 bg-brandYellow/10 text-brandYellow rounded-2xl flex items-center justify-center text-3xl mx-auto border border-brandYellow/20">
+          <i class="ph ph-file-pdf"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">Baixar Pitch Deck Oficial</h3>
+        <p class="text-xs text-slate-400">Informe seu e-mail corporativo para liberar o download imediato do relatório de apresentação em PDF.</p>
+      </div>
+
+      <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">E-mail</label>
+          <input type="email" id="modalEmail" required placeholder="seu@email.com" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 text-white rounded-xl focus:ring-2 focus:ring-brandYellow outline-none text-sm">
+        </div>
+        <button type="submit" class="w-full bg-brandYellow text-brandBlue font-extrabold py-3.5 rounded-xl hover:bg-brandYellow-hover transition-all text-sm shadow-lg">
+          Baixar Apresentação em PDF
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- JavaScript Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
