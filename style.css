@@ -1,14 +1,14 @@
-/* Custom CSS Styles */
+/* Estilos Customizados para a Landing Page EMEF Maria Regina */
 
 /* Keyframe Animations */
 @keyframes pulseSlow {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 200, 0, 0.4);
+    box-shadow: 0 0 0 0 rgba(255, 170, 29, 0.4);
   }
   50% {
     transform: scale(1.02);
-    box-shadow: 0 0 15px 5px rgba(255, 200, 0, 0.2);
+    box-shadow: 0 0 15px 5px rgba(255, 170, 29, 0.2);
   }
 }
 
@@ -31,20 +31,53 @@
   animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar com as cores do portal de Timon */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #061021;
+  background: #0B3B73;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #162F58;
+  background: #0052A5;
+  border-radius: 5px;/* Custom CSS para EMEF Maria Regina - Tema Mesclado Azul, Amarelo e Branco */
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar com as cores de Timon */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B3B73;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFAA1D;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFC800;
+  background: #0052A5;
+}
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFAA1D;
 }

@@ -1,9 +1,9 @@
 // Inicializar Biblioteca de Animações AOS
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
-    duration: 800,
+    duration: 700,
     once: true,
-    easing: 'ease-out-cubic'
+    easing: 'ease-out'
   });
 });
 
@@ -51,14 +51,14 @@ if (modal) {
 // 3. Formulários Interativos
 function handleFormSubmit(e) {
   e.preventDefault();
-  alert('Obrigado pelo interesse! Nossa equipe de captação enviará a apresentação detalhada para o e-mail cadastrado.');
+  alert('Mensagem enviada com sucesso! A equipe da EMEF Maria Regina de Sousa responderá em breve.');
   e.target.reset();
 }
 
 function handleModalSubmit(e) {
   e.preventDefault();
-  const email = document.getElementById('modalEmail').value;
-  alert(`O link do Pitch Deck da EMEF Maria Regina foi enviado com sucesso para: ${email}!`);
+  const contact = document.getElementById('modalEmail').value;
+  alert(`Obrigado pelo interesse! Enviamos o PDF para: ${contact}`);
   closeModal();
   e.target.reset();
 }
@@ -71,7 +71,7 @@ function startCounters() {
   counters.forEach(counter => {
     const target = +counter.getAttribute('data-target');
     let count = 0;
-    const speed = target / 40;
+    const speed = target / 35;
 
     const updateCount = () => {
       count += speed;
@@ -96,49 +96,7 @@ if (metricsSection) {
         countersStarted = true;
       }
     });
-  }, { threshold: 0.4 });
+  }, { threshold: 0.3 });
 
   observer.observe(metricsSection);
-}
-
-// 5. Troca Interativa de Tabs no Plano de Expansão
-function switchTab(tabKey) {
-  // Hide all tab contents
-  const contents = document.querySelectorAll('.tab-content');
-  contents.forEach(content => content.classList.add('hidden'));
-
-  // Reset tab buttons style
-  const buttons = document.querySelectorAll('.tab-btn');
-  buttons.forEach(btn => {
-    btn.classList.remove('border-brandYellow', 'bg-slate-800', 'text-white');
-    btn.classList.add('border-slate-800', 'bg-slate-900/50', 'text-slate-400');
-  });
-
-  // Show selected content
-  const selectedContent = document.getElementById(`content-${tabKey}`);
-  if (selectedContent) selectedContent.classList.remove('hidden');
-
-  // Highlight selected tab button
-  const selectedBtn = document.getElementById(`tab-${tabKey}`);
-  if (selectedBtn) {
-    selectedBtn.classList.remove('border-slate-800', 'bg-slate-900/50', 'text-slate-400');
-    selectedBtn.classList.add('border-brandYellow', 'bg-slate-800', 'text-white');
-  }
-}
-
-// 6. Simulação da Calculadora de Aporte
-const rangeSelect = document.getElementById('rangeSelect');
-const impactText = document.getElementById('impactText');
-
-if (rangeSelect && impactText) {
-  rangeSelect.addEventListener('change', (e) => {
-    const val = e.target.value;
-    if (val === '50') {
-      impactText.innerText = '+60 Alunos Beneficiados';
-    } else if (val === '150') {
-      impactText.innerText = '+150 Alunos Beneficiados';
-    } else {
-      impactText.innerText = '+300+ Alunos & Novo Bloco Completo';
-    }
-  });
 }
