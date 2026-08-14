@@ -42,7 +42,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-timonYellow selection:text-timonBlue-dark overflow-x-hidden">
 
-  <!-- ==================== HEADER / NAVBAR (AZUL INSTITUCIONAL) ==================== -->
+  <!-- ==================== HEADER / NAVBAR ==================== -->
   <header class="bg-timonBlue text-white sticky top-0 z-50 shadow-md border-b-2 border-timonYellow/80 transition-all">
     <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
       <!-- Logo da Escola -->
@@ -59,6 +59,7 @@
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm text-blue-100">
         <a href="#sobre" class="hover:text-timonYellow transition-colors relative py-1">Nossa História</a>
+        <a href="#galeria" class="hover:text-timonYellow transition-colors relative py-1">A Escola</a>
         <a href="#diferenciais" class="hover:text-timonYellow transition-colors relative py-1">Diferenciais</a>
         <a href="#expansao" class="hover:text-timonYellow transition-colors relative py-1">Projeto de Apoio</a>
         <a href="#contato" class="hover:text-timonYellow transition-colors relative py-1">Contato</a>
@@ -79,6 +80,7 @@
     <!-- Mobile Nav Dropdown -->
     <div id="mobileMenu" class="hidden md:hidden bg-timonBlue-dark border-t border-blue-800 px-6 py-5 space-y-4 shadow-lg">
       <a href="#sobre" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Nossa História</a>
+      <a href="#galeria" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">A Escola</a>
       <a href="#diferenciais" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Diferenciais</a>
       <a href="#expansao" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Projeto de Apoio</a>
       <a href="#contato" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Contato</a>
@@ -89,9 +91,8 @@
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION (GRADIENTE DE AZUL + CARD AMARELO DE ALTO IMPACTO) ==================== -->
+  <!-- ==================== HERO SECTION COM A FOTO REAL DA FACHADA ==================== -->
   <section id="sobre" class="bg-gradient-to-br from-timonBlue-dark via-timonBlue to-timonBlue-light text-white py-20 px-6 relative overflow-hidden">
-    <!-- Efeitos e detalhes em amarelo de fundo -->
     <div class="absolute -top-20 -right-20 w-96 h-96 bg-timonYellow/15 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -108,21 +109,21 @@
         </h1>
         
         <p class="text-blue-100 text-lg md:text-xl max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
-          O que nasceu no espaço de um antigo salão comunitário na Vila Angélica hoje é referência no ensino de 170 crianças do Ensino Infantil ao 2º ano do Ensino Fundamental.
+          O que nasceu no espaço de um antigo salão comunitário na Vila Angélica hoje é a referência de ensino para 170 crianças do Ensino Infantil ao 2º ano do Ensino Fundamental.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
-          <a href="#diferenciais" class="inline-flex justify-center items-center gap-3 bg-timonYellow text-timonBlue-dark font-extrabold px-8 py-4 rounded-2xl hover:bg-timonYellow-hover transition-all shadow-xl shadow-black/20 active:scale-95 group">
-            <span>Conhecer Nossos Resultados</span>
+          <a href="#galeria" class="inline-flex justify-center items-center gap-3 bg-timonYellow text-timonBlue-dark font-extrabold px-8 py-4 rounded-2xl hover:bg-timonYellow-hover transition-all shadow-xl shadow-black/20 active:scale-95 group">
+            <span>Ver Fotos da Escola</span>
             <i class="ph ph-arrow-right font-bold group-hover:translate-x-1 transition-transform"></i>
           </a>
           <button onclick="openModal()" class="inline-flex justify-center items-center gap-2 border-2 border-white/80 bg-white/10 backdrop-blur-md text-white font-bold px-6 py-4 rounded-2xl hover:bg-white hover:text-timonBlue transition-all shadow-sm">
             <i class="ph ph-presentation-chart text-xl text-timonYellow"></i>
-            <span>Ver Apresentação Completa</span>
+            <span>Apresentação Institucional</span>
           </button>
         </div>
 
-        <!-- Badges Brancas/Transparentes -->
+        <!-- Badges -->
         <div class="pt-6 grid grid-cols-3 gap-4 border-t border-blue-400/30 max-w-lg mx-auto lg:mx-0">
           <div class="text-center lg:text-left">
             <p class="text-xs text-blue-200 uppercase font-bold">Público</p>
@@ -139,31 +140,25 @@
         </div>
       </div>
 
-      <!-- Card de Destaque Amarelo e Branco -->
+      <!-- Card com Foto Real da Fachada + Destaque 97% -->
       <div class="lg:col-span-5 flex justify-center" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-        <div class="w-full max-w-md bg-white text-slate-800 rounded-3xl p-6 shadow-2xl relative border-4 border-timonYellow">
+        <div class="w-full max-w-md bg-white text-slate-800 rounded-3xl p-4 shadow-2xl relative border-4 border-timonYellow">
           
-          <div class="relative w-full py-8 bg-gradient-to-b from-timonYellow-soft to-white rounded-2xl border border-timonYellow/40 flex flex-col items-center justify-center text-center p-6 space-y-2">
-            
-            <span class="text-xs font-extrabold uppercase tracking-widest text-timonBlue-dark bg-timonYellow px-3.5 py-1 rounded-full shadow-sm">
-              Maior Conquista Pedagógica
-            </span>
-
-            <div class="text-6xl md:text-7xl font-black text-timonBlue pt-2 flex items-baseline justify-center">
-              <span>97%</span>
+          <div class="relative w-full h-56 rounded-2xl overflow-hidden shadow-inner group">
+            <img src="WhatsApp Image 2026-08-12 at 10.03.01.jpeg" alt="Fachada da EMEF Maria Regina de Sousa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox(this.src)">
+            <div class="absolute bottom-3 left-3 bg-timonBlue-dark/90 text-white text-xs font-bold px-3 py-1 rounded-lg backdrop-blur-sm border border-timonYellow/40 flex items-center gap-1.5">
+              <i class="ph ph-buildings text-timonYellow"></i> Fachada Oficial
             </div>
-
-            <h3 class="text-xl font-black text-slate-900">Taxa de Alfabetização</h3>
-            <p class="text-xs text-slate-600 max-w-xs leading-relaxed">
-              Alunos alfabetizados no tempo certo com relatórios e acompanhamento contínuo das turmas.
-            </p>
           </div>
 
-          <div class="mt-4 p-4 bg-timonBlue-soft rounded-2xl border border-timonBlue/10 text-xs text-slate-700 flex items-center gap-3">
-            <div class="w-10 h-10 bg-timonBlue text-white rounded-xl flex items-center justify-center text-2xl shrink-0 shadow-sm">
-              <i class="ph ph-chalkboard-teacher"></i>
+          <div class="p-4 bg-gradient-to-b from-timonYellow-soft to-white rounded-2xl border border-timonYellow/40 mt-3 text-center space-y-1">
+            <span class="text-xs font-extrabold uppercase tracking-widest text-timonBlue-dark bg-timonYellow px-3 py-0.5 rounded-full inline-block">
+              Taxa de Alfabetização
+            </span>
+            <div class="text-5xl font-black text-timonBlue flex justify-center items-center">
+              <span>97%</span>
             </div>
-            <p><strong class="text-timonBlue-dark">Equipe 100% Docente Feminina:</strong> Sensibilidade, dedicação e acolhimento humano no desenvolvimento escolar.</p>
+            <p class="text-xs text-slate-600 font-medium">Alunos alfabetizados no ciclo correto.</p>
           </div>
 
         </div>
@@ -173,48 +168,119 @@
   </section>
 
   <!-- ==================== BANNER AMARELO DE MÉTRICAS ==================== -->
-  <section class="py-12 bg-timonYellow text-timonBlue-dark font-black shadow-inner relative z-20">
+  <section class="py-10 bg-timonYellow text-timonBlue-dark font-black shadow-inner relative z-20">
     <div id="metricsSection" class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
       
-      <div class="p-4 border-b sm:border-b-0 sm:border-r border-timonBlue-dark/10" data-aos="zoom-in" data-aos-delay="100">
+      <div class="p-2 border-b sm:border-b-0 sm:border-r border-timonBlue-dark/10" data-aos="zoom-in" data-aos-delay="100">
         <div class="text-4xl lg:text-5xl font-black flex justify-center items-center gap-1">
           <span class="counter" data-target="97">0</span>%
         </div>
-        <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Índice de Alfabetização Infantil</p>
+        <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Índice de Alfabetização</p>
       </div>
 
-      <div class="p-4 border-b lg:border-b-0 lg:border-r border-timonBlue-dark/10" data-aos="zoom-in" data-aos-delay="200">
+      <div class="p-2 border-b lg:border-b-0 lg:border-r border-timonBlue-dark/10" data-aos="zoom-in" data-aos-delay="200">
         <div class="text-4xl lg:text-5xl font-black flex justify-center items-center gap-1">
           <span class="counter" data-target="170">0</span>
         </div>
         <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Capacidade (Manhã e Tarde)</p>
       </div>
 
-      <div class="p-4 border-b sm:border-b-0 sm:border-r border-timonBlue-dark/10" data-aos="zoom-in" data-aos-delay="300">
+      <div class="p-2 border-b sm:border-b-0 sm:border-r border-timonBlue-dark/10" data-aos="zoom-in" data-aos-delay="300">
         <div class="text-4xl lg:text-5xl font-black flex justify-center items-center gap-1">
           <span class="counter" data-target="100">0</span>%
         </div>
         <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Equipe de Professoras</p>
       </div>
 
-      <div class="p-4" data-aos="zoom-in" data-aos-delay="400">
+      <div class="p-2" data-aos="zoom-in" data-aos-delay="400">
         <div class="text-4xl lg:text-5xl font-black flex justify-center items-center gap-1">
           <span class="counter" data-target="2">0</span>º Ano
         </div>
-        <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Ciclo Ensino Fundamental</p>
+        <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Ciclo Fundamental</p>
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== HISTÓRIA E PILARES (FUNDO BRANCO CLEAN) ==================== -->
-  <section id="diferenciais" class="py-20 px-6 max-w-7xl mx-auto bg-slate-50">
-    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3" data-aos="fade-up">
+  <!-- ==================== NOVA SEÇÃO: GALERIA DE FOTOS DA ESCOLA ==================== -->
+  <section id="galeria" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-14 space-y-3" data-aos="fade-up">
+      <span class="bg-timonBlue-soft text-timonBlue border border-timonBlue/20 text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider">
+        Conheça Nossa Estrutura
+      </span>
       <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
-        Conheça a <span class="text-timonBlue">EMEF Maria Regina de Sousa</span>
+        O Dia a Dia na <span class="text-timonBlue">EMEF Maria Regina de Sousa</span>
       </h2>
       <p class="text-slate-600 text-base">
-        Transformando a realidade da comunidade da Vila Angélica com acolhimento, afeto e rigor pedagógico.
+        Ambientes organizados com dedicação e afeto para receber nossas crianças da Vila Angélica.
+      </p>
+    </div>
+
+    <!-- Grid de Imagens Reais -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Foto 1: Sala de Aula -->
+      <div class="bg-white rounded-3xl p-3 border-2 border-slate-200/80 shadow-md hover:shadow-xl hover:border-timonBlue transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox('WhatsApp Image 2026-08-12 at 10.03.02.jpeg')">
+        <div class="w-full h-64 rounded-2xl overflow-hidden relative">
+          <img src="WhatsApp Image 2026-08-12 at 10.03.02.jpeg" alt="Sala de Aula da Escola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+            <span class="text-white font-bold text-sm flex items-center gap-1.5">
+              <i class="ph ph-chalkboard text-timonYellow text-lg"></i> Sala de Aula e Alfabetização
+            </span>
+          </div>
+        </div>
+        <div class="p-4">
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Ambiente climatizado com murais pedagógicos de numerais, cores e datas para estimular o aprendizado lúdico diário.
+          </p>
+        </div>
+      </div>
+
+      <!-- Foto 2: Secretaria / Docentes -->
+      <div class="bg-white rounded-3xl p-3 border-2 border-timonYellow shadow-md hover:shadow-xl transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox('WhatsApp Image 2026-08-12 at 10.03.03.jpeg')">
+        <div class="w-full h-64 rounded-2xl overflow-hidden relative">
+          <img src="WhatsApp Image 2026-08-12 at 10.03.03.jpeg" alt="Equipe de Gestão e Docência" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+            <span class="text-white font-bold text-sm flex items-center gap-1.5">
+              <i class="ph ph-user-circle-gear text-timonYellow text-lg"></i> Gestão e Planejamento
+            </span>
+          </div>
+        </div>
+        <div class="p-4">
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Corpo docente 100% feminino trabalhando na elaboração de atividades e relatórios periódicos de desempenho dos alunos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Foto 3: Espaço de Convivência / Eventos -->
+      <div class="bg-white rounded-3xl p-3 border-2 border-slate-200/80 shadow-md hover:shadow-xl hover:border-timonBlue transition-all group cursor-pointer" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox('WhatsApp Image 2026-08-12 at 10.03.04.jpeg')">
+        <div class="w-full h-64 rounded-2xl overflow-hidden relative">
+          <img src="WhatsApp Image 2026-08-12 at 10.03.04.jpeg" alt="Espaço de Integração com as Famílias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+            <span class="text-white font-bold text-sm flex items-center gap-1.5">
+              <i class="ph ph-users-three text-timonYellow text-lg"></i> Vínculo com a Família
+            </span>
+          </div>
+        </div>
+        <div class="p-4">
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Espaço de acolhimento para celebrações comunitárias e reuniões de pais, fortalecendo a união entre escola e comunidade.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== HISTÓRIA E PILARES ==================== -->
+  <section id="diferenciais" class="py-20 px-6 max-w-7xl mx-auto bg-slate-50 border-t border-slate-200/60">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+        Pilares da Nossa <span class="text-timonBlue">Educação</span>
+      </h2>
+      <p class="text-slate-600 text-base">
+        Como transformamos um antigo salão de reuniões em um centro de alfabetização de referência.
       </p>
     </div>
 
@@ -227,11 +293,11 @@
         </div>
         <h3 class="text-xl font-bold text-slate-900 mb-3">Origem Comunitária</h3>
         <p class="text-slate-600 text-sm leading-relaxed">
-          Iniciada no espaço de um antigo salão de reuniões da comunidade na Vila Angélica, a escola é símbolo de superação e acolhimento local.
+          Nascida a partir de um salão comunitário na Vila Angélica, a escola mantém viva a relação de respeito e pertencimento de cada morador do bairro.
         </p>
       </div>
 
-      <!-- Card 2 (Destaque Bordas Amarelas) -->
+      <!-- Card 2 -->
       <div class="bg-white p-8 rounded-3xl border-2 border-timonYellow shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group relative" data-aos="fade-up" data-aos-delay="200">
         <div class="absolute -top-3.5 right-6 bg-timonYellow text-timonBlue-dark text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
           Excelência
@@ -239,9 +305,9 @@
         <div class="w-14 h-14 bg-timonYellow text-timonBlue-dark rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm">
           <i class="ph ph-book-open"></i>
         </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">Foco Total na Alfabetização</h3>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Foco na Alfabetização</h3>
         <p class="text-slate-600 text-sm leading-relaxed">
-          Relatórios periódicos com métricas claras mantêm 97% das crianças alfabetizadas e prontas para o avanço escolar.
+          Com relatórios pedagógicos periódicos e metodologia contínua, alcançamos e sustentamos a marca de 97% de alfabetização na infância.
         </p>
       </div>
 
@@ -252,7 +318,7 @@
         </div>
         <h3 class="text-xl font-bold text-slate-900 mb-3">Corpo Docente Feminino</h3>
         <p class="text-slate-600 text-sm leading-relaxed">
-          Equipe formada 100% por professoras capacitadas, garantindo um ambiente seguro, atencioso e humano para os primeiros anos da infância.
+          Professoras experientes que aliam cuidado socioemocional à seriedade pedagógica no desenvolvimento de cada criança.
         </p>
       </div>
 
@@ -279,21 +345,21 @@
             <i class="ph ph-check-circle text-timonBlue text-2xl shrink-0 mt-0.5"></i>
             <div>
               <strong class="text-slate-900 block">Melhoria nos Espaços Recreativos</strong>
-              <span>Infraestrutura adaptada para atividades multissensoriais no ensino infantil.</span>
+              <span>Infraestrutura adaptada para atividades multissensoriais e brincadeiras lúdicas.</span>
             </div>
           </li>
           <li class="flex items-start gap-3">
             <i class="ph ph-check-circle text-timonBlue text-2xl shrink-0 mt-0.5"></i>
             <div>
               <strong class="text-slate-900 block">Acervo para o Cantinho da Leitura</strong>
-              <span>Doação de novos livros ilustrados para reforçar a alfabetização contínua.</span>
+              <span>Doação de novos livros ilustrados para incentivar o hábito de leitura.</span>
             </div>
           </li>
           <li class="flex items-start gap-3">
             <i class="ph ph-check-circle text-timonBlue text-2xl shrink-0 mt-0.5"></i>
             <div>
               <strong class="text-slate-900 block">Kits Pedagógicos Interativos</strong>
-              <span>Recursos didáticos para turmas da educação infantil ao 2º ano.</span>
+              <span>Jogos e recursos para turmas da educação infantil ao 2º ano.</span>
             </div>
           </li>
         </ul>
@@ -310,11 +376,11 @@
         <div class="space-y-3 pt-2">
           <div class="bg-white p-4 rounded-2xl border border-timonBlue/10 shadow-sm">
             <h4 class="text-sm font-bold text-slate-900">Doação de Materiais Didáticos</h4>
-            <p class="text-xs text-slate-600 mt-1">Livros de literatura infantil, materiais de artes e jogos pedagógicos.</p>
+            <p class="text-xs text-slate-600 mt-1">Livros infantis, materiais de pintura e jogos pedagógicos.</p>
           </div>
           <div class="bg-white p-4 rounded-2xl border border-timonBlue/10 shadow-sm">
             <h4 class="text-sm font-bold text-slate-900">Apoio a Estrutura e Reformas</h4>
-            <p class="text-xs text-slate-600 mt-1">Revitalização de espaços de aprendizagem e convivência da escola.</p>
+            <p class="text-xs text-slate-600 mt-1">Revitalização de espaços de convivência e salas de aula da escola.</p>
           </div>
         </div>
 
@@ -326,7 +392,7 @@
     </div>
   </section>
 
-  <!-- ==================== FORMULÁRIO EM AZUL COM DETALHES AMARELOS ==================== -->
+  <!-- ==================== FORMULÁRIO / CONTATO ==================== -->
   <section id="contato" class="py-20 px-6 max-w-4xl mx-auto" data-aos="zoom-in">
     <div class="bg-gradient-to-br from-timonBlue via-timonBlue-dark to-slate-900 p-8 md:p-12 rounded-3xl shadow-2xl text-white relative border-2 border-timonYellow/50">
       <div class="text-center space-y-3 max-w-2xl mx-auto mb-8">
@@ -370,7 +436,7 @@
     </div>
   </footer>
 
-  <!-- ==================== MODAL DE APOIO ==================== -->
+  <!-- ==================== MODAL DE APRESENTAÇÃO ==================== -->
   <div id="modal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl relative space-y-6 animate-scale-up border-2 border-timonYellow">
       
@@ -383,7 +449,7 @@
           <i class="ph ph-file-text"></i>
         </div>
         <h3 class="text-xl font-bold text-slate-900">Apresentação da EMEF Maria Regina</h3>
-        <p class="text-xs text-slate-500">Informe seu e-mail ou WhatsApp para receber a apresentação institucional em PDF com dados da alfabetização e história da escola.</p>
+        <p class="text-xs text-slate-500">Informe seu e-mail ou WhatsApp para receber o material institucional em PDF com fotos e dados de alfabetização.</p>
       </div>
 
       <form onsubmit="handleModalSubmit(event)" class="space-y-4">
@@ -397,6 +463,14 @@
       </form>
 
     </div>
+  </div>
+
+  <!-- ==================== LIGHTBOX MODAL (VISUALIZADOR DE FOTOS EM TELA CHEIA) ==================== -->
+  <div id="lightbox" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <button class="absolute top-6 right-6 text-white text-3xl hover:text-timonYellow transition-colors">
+      <i class="ph ph-x"></i>
+    </button>
+    <img id="lightboxImg" src="" alt="Visualização em alta resolução" class="max-w-full max-h-[85vh] rounded-2xl shadow-2xl border-2 border-white/20 object-contain animate-scale-up" onclick="event.stopPropagation()">
   </div>
 
   <!-- AOS (Animate On Scroll) JS -->

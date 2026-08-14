@@ -31,7 +31,7 @@ mobileLinks.forEach(link => {
   });
 });
 
-// 2. Modal Controls
+// 2. Modal de Apresentação
 const modal = document.getElementById('modal');
 
 function openModal() {
@@ -48,7 +48,24 @@ if (modal) {
   });
 }
 
-// 3. Formulários Interativos
+// 3. Lightbox (Ampliação de fotos)
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+function openLightbox(src) {
+  if (lightbox && lightboxImg) {
+    lightboxImg.src = src;
+    lightbox.classList.remove('hidden');
+  }
+}
+
+function closeLightbox() {
+  if (lightbox) {
+    lightbox.classList.add('hidden');
+  }
+}
+
+// 4. Formulários Interativos
 function handleFormSubmit(e) {
   e.preventDefault();
   alert('Mensagem enviada com sucesso! A equipe da EMEF Maria Regina de Sousa responderá em breve.');
@@ -58,12 +75,12 @@ function handleFormSubmit(e) {
 function handleModalSubmit(e) {
   e.preventDefault();
   const contact = document.getElementById('modalEmail').value;
-  alert(`Obrigado pelo interesse! Enviamos o PDF para: ${contact}`);
+  alert(`Obrigado pelo interesse! Enviamos o PDF com fotos e dados da escola para: ${contact}`);
   closeModal();
   e.target.reset();
 }
 
-// 4. Animação de Contadores Numéricos (Intersection Observer)
+// 5. Animação de Contadores Numéricos (Intersection Observer)
 let countersStarted = false;
 
 function startCounters() {
