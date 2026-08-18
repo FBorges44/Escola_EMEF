@@ -47,8 +47,8 @@
     <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
       <!-- Logo da Escola -->
       <a href="#" class="text-xl font-bold tracking-tight flex items-center gap-3 group">
-        <div class="w-10 h-10 bg-timonYellow text-timonBlue-dark rounded-xl flex items-center justify-center font-black shadow-md group-hover:scale-105 transition-transform">
-          <i class="ph ph-heart text-2xl"></i>
+        <div class="h-11 px-2 py-1.5 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+          <img src="logo-prefeitura-timon.png" alt="Prefeitura de Timon" class="h-full w-auto object-contain">
         </div>
         <div class="leading-tight">
           <span class="block text-xs uppercase tracking-widest text-timonYellow font-extrabold">EMEF</span>
@@ -58,18 +58,12 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm text-blue-100">
-        <a href="#sobre" class="hover:text-timonYellow transition-colors relative py-1">Nossa História</a>
-        <a href="#galeria" class="hover:text-timonYellow transition-colors relative py-1">A Escola</a>
-        <a href="#diferenciais" class="hover:text-timonYellow transition-colors relative py-1">Diferenciais</a>
-        <a href="#expansao" class="hover:text-timonYellow transition-colors relative py-1">Projeto de Apoio</a>
-        <a href="#contato" class="hover:text-timonYellow transition-colors relative py-1">Contato</a>
+        <a href="#sobre" class="nav-link hover:text-timonYellow transition-colors relative py-1">Nossa História</a>
+        <a href="#galeria" class="nav-link hover:text-timonYellow transition-colors relative py-1">A Escola</a>
+        <a href="#diferenciais" class="nav-link hover:text-timonYellow transition-colors relative py-1">Diferenciais</a>
+        <a href="#atividades" class="nav-link hover:text-timonYellow transition-colors relative py-1">Atividades</a>
+        <a href="#contato" class="nav-link hover:text-timonYellow transition-colors relative py-1">Contato</a>
       </nav>
-
-      <!-- Desktop CTA Button -->
-      <button onclick="openModal()" class="hidden md:flex items-center gap-2 bg-timonYellow text-timonBlue-dark font-extrabold px-5 py-2.5 rounded-xl hover:bg-timonYellow-hover transition-all shadow-md active:scale-95">
-        <i class="ph ph-hand-heart text-lg"></i>
-        <span>Apoiar a Escola</span>
-      </button>
 
       <!-- Mobile Menu Button -->
       <button id="menuBtn" class="md:hidden text-2xl text-white focus:outline-none">
@@ -79,15 +73,11 @@
 
     <!-- Mobile Nav Dropdown -->
     <div id="mobileMenu" class="hidden md:hidden bg-timonBlue-dark border-t border-blue-800 px-6 py-5 space-y-4 shadow-lg">
-      <a href="#sobre" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Nossa História</a>
-      <a href="#galeria" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">A Escola</a>
-      <a href="#diferenciais" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Diferenciais</a>
-      <a href="#expansao" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Projeto de Apoio</a>
-      <a href="#contato" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link font-medium">Contato</a>
-      <button onclick="openModal()" class="w-full flex justify-center items-center gap-2 bg-timonYellow text-timonBlue-dark font-bold px-5 py-3 rounded-xl hover:bg-timonYellow-hover transition-all shadow-md">
-        <i class="ph ph-hand-heart text-lg"></i>
-        <span>Apoiar a Escola</span>
-      </button>
+      <a href="#sobre" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link nav-link font-medium">Nossa História</a>
+      <a href="#galeria" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link nav-link font-medium">A Escola</a>
+      <a href="#diferenciais" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link nav-link font-medium">Diferenciais</a>
+      <a href="#atividades" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link nav-link font-medium">Atividades</a>
+      <a href="#contato" class="block text-blue-100 hover:text-timonYellow transition-colors mobile-link nav-link font-medium">Contato</a>
     </div>
   </header>
 
@@ -109,7 +99,7 @@
         </h1>
         
         <p class="text-blue-100 text-lg md:text-xl max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
-          O que nasceu no espaço de um antigo salão comunitário na Vila Angélica hoje é a referência de ensino para 170 crianças do Ensino Infantil ao 2º ano do Ensino Fundamental.
+          O que nasceu no espaço de um antigo salão comunitário na Vila Angélica hoje é a referência de ensino para 170 crianças do Ensino Infantil ao 1º ano do Ensino Fundamental.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
@@ -127,7 +117,7 @@
         <div class="pt-6 grid grid-cols-3 gap-4 border-t border-blue-400/30 max-w-lg mx-auto lg:mx-0">
           <div class="text-center lg:text-left">
             <p class="text-xs text-blue-200 uppercase font-bold">Público</p>
-            <p class="text-sm font-black text-white mt-1">Infantil ao 2º Ano</p>
+            <p class="text-sm font-black text-white mt-1">Infantil ao 1º Ano</p>
           </div>
           <div class="text-center lg:text-left border-x border-blue-400/30 px-2">
             <p class="text-xs text-blue-200 uppercase font-bold">Capacidade</p>
@@ -194,7 +184,7 @@
 
       <div class="p-2" data-aos="zoom-in" data-aos-delay="400">
         <div class="text-4xl lg:text-5xl font-black flex justify-center items-center gap-1">
-          <span class="counter" data-target="2">0</span>º Ano
+          <span class="counter" data-target="1">0</span>º Ano
         </div>
         <p class="text-timonBlue-dark/90 font-bold text-sm mt-1">Ciclo Fundamental</p>
       </div>
@@ -325,41 +315,41 @@
     </div>
   </section>
 
-  <!-- ==================== PROJETO DE MELHORIAS / APOIO ==================== -->
-  <section id="expansao" class="bg-white py-20 px-6 border-t border-slate-200">
+  <!-- ==================== ATIVIDADES / ESCOLA EM REFORMA ==================== -->
+  <section id="atividades" class="bg-white py-20 px-6 border-t border-slate-200">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       <div class="lg:col-span-6 space-y-6" data-aos="fade-right">
         <span class="bg-timonYellow-soft text-timonBlue-dark border border-timonYellow/60 text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider">
-          Projeto de Desenvolvimento Escolar
+          Atividades e Melhorias
         </span>
         <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-          Apoiando o Futuro das Crianças da Vila Angélica
+          Nossa Escola Está em Reforma
         </h2>
         <p class="text-slate-600 text-sm leading-relaxed">
-          Para continuar garantindo o padrão de excelência na alfabetização e conforto para os 170 alunos atendidos nos dois turnos, buscamos parcerias e doações para melhorias pedagógicas e estruturais.
+          A EMEF Maria Regina de Sousa está passando por obras de melhoria para receber ainda melhor as crianças da Vila Angélica, com um ambiente mais seguro, confortável e estimulante para o aprendizado.
         </p>
 
         <ul class="space-y-4 text-slate-700 text-sm">
           <li class="flex items-start gap-3">
-            <i class="ph ph-check-circle text-timonBlue text-2xl shrink-0 mt-0.5"></i>
+            <i class="ph ph-hard-hat text-timonBlue text-2xl shrink-0 mt-0.5"></i>
             <div>
-              <strong class="text-slate-900 block">Melhoria nos Espaços Recreativos</strong>
-              <span>Infraestrutura adaptada para atividades multissensoriais e brincadeiras lúdicas.</span>
+              <strong class="text-slate-900 block">Escola em Obras</strong>
+              <span>Melhorias estruturais em andamento para oferecer mais conforto aos alunos e à equipe.</span>
             </div>
           </li>
           <li class="flex items-start gap-3">
-            <i class="ph ph-check-circle text-timonBlue text-2xl shrink-0 mt-0.5"></i>
+            <i class="ph ph-calendar-check text-timonBlue text-2xl shrink-0 mt-0.5"></i>
             <div>
-              <strong class="text-slate-900 block">Acervo para o Cantinho da Leitura</strong>
-              <span>Doação de novos livros ilustrados para incentivar o hábito de leitura.</span>
+              <strong class="text-slate-900 block">Datas Comemorativas</strong>
+              <span>Em breve, publicaremos aqui as fotos das nossas festas e celebrações com os alunos.</span>
             </div>
           </li>
           <li class="flex items-start gap-3">
-            <i class="ph ph-check-circle text-timonBlue text-2xl shrink-0 mt-0.5"></i>
+            <i class="ph ph-camera text-timonBlue text-2xl shrink-0 mt-0.5"></i>
             <div>
-              <strong class="text-slate-900 block">Kits Pedagógicos Interativos</strong>
-              <span>Jogos e recursos para turmas da educação infantil ao 2º ano.</span>
+              <strong class="text-slate-900 block">Eventos da Escola</strong>
+              <span>Este espaço será atualizado com registros dos principais eventos da nossa comunidade escolar.</span>
             </div>
           </li>
         </ul>
@@ -367,26 +357,34 @@
 
       <div class="lg:col-span-6 bg-timonBlue-soft p-8 rounded-3xl border-2 border-timonBlue/20 shadow-xl space-y-6" data-aos="fade-left">
         <h3 class="text-xl font-bold text-timonBlue-dark flex items-center gap-2">
-          <i class="ph ph-handshake text-timonYellow-hover"></i> Como Apoiar a Nossa Escola
+          <i class="ph ph-images text-timonYellow-hover"></i> Galeria de Eventos
         </h3>
         <p class="text-xs text-slate-600">
-          Empresas, doadores e parceiros podem colaborar com projetos de melhoria direta para os alunos da Vila Angélica.
+          Em breve, fotos de eventos e datas comemorativas da EMEF Maria Regina de Sousa serão publicadas aqui.
         </p>
 
-        <div class="space-y-3 pt-2">
-          <div class="bg-white p-4 rounded-2xl border border-timonBlue/10 shadow-sm">
-            <h4 class="text-sm font-bold text-slate-900">Doação de Materiais Didáticos</h4>
-            <p class="text-xs text-slate-600 mt-1">Livros infantis, materiais de pintura e jogos pedagógicos.</p>
+        <div class="grid grid-cols-2 gap-3 pt-2">
+          <div class="aspect-square bg-white rounded-2xl border-2 border-dashed border-timonBlue/25 flex flex-col items-center justify-center gap-1.5 text-timonBlue/40">
+            <i class="ph ph-image text-3xl"></i>
+            <span class="text-[10px] font-bold uppercase tracking-wide">Em breve</span>
           </div>
-          <div class="bg-white p-4 rounded-2xl border border-timonBlue/10 shadow-sm">
-            <h4 class="text-sm font-bold text-slate-900">Apoio a Estrutura e Reformas</h4>
-            <p class="text-xs text-slate-600 mt-1">Revitalização de espaços de convivência e salas de aula da escola.</p>
+          <div class="aspect-square bg-white rounded-2xl border-2 border-dashed border-timonBlue/25 flex flex-col items-center justify-center gap-1.5 text-timonBlue/40">
+            <i class="ph ph-image text-3xl"></i>
+            <span class="text-[10px] font-bold uppercase tracking-wide">Em breve</span>
+          </div>
+          <div class="aspect-square bg-white rounded-2xl border-2 border-dashed border-timonBlue/25 flex flex-col items-center justify-center gap-1.5 text-timonBlue/40">
+            <i class="ph ph-image text-3xl"></i>
+            <span class="text-[10px] font-bold uppercase tracking-wide">Em breve</span>
+          </div>
+          <div class="aspect-square bg-white rounded-2xl border-2 border-dashed border-timonBlue/25 flex flex-col items-center justify-center gap-1.5 text-timonBlue/40">
+            <i class="ph ph-image text-3xl"></i>
+            <span class="text-[10px] font-bold uppercase tracking-wide">Em breve</span>
           </div>
         </div>
 
-        <button onclick="openModal()" class="w-full bg-timonYellow text-timonBlue-dark font-extrabold py-3.5 rounded-xl hover:bg-timonYellow-hover transition-all shadow-md">
-          Falar com a Equipe Gestora
-        </button>
+        <a href="#contato" class="w-full flex justify-center items-center gap-2 bg-timonYellow text-timonBlue-dark font-extrabold py-3.5 rounded-xl hover:bg-timonYellow-hover transition-all shadow-md">
+          Fale Conosco
+        </a>
       </div>
 
     </div>
@@ -430,7 +428,7 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
       <div>
         <p class="font-bold text-white text-base">EMEF Maria Regina de Sousa</p>
-        <p class="text-xs text-blue-300 mt-1">Ensino Infantil e Fundamental até o 2º Ano — Vila Angélica, Timon-MA.</p>
+        <p class="text-xs text-blue-300 mt-1">Ensino Infantil e Fundamental até o 1º Ano — Vila Angélica, Timon-MA.</p>
       </div>
       <p class="text-xs text-blue-300">&copy; 2026 EMEF Maria Regina de Sousa. Todos os direitos reservados.</p>
     </div>

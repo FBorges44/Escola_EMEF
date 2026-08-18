@@ -117,3 +117,29 @@ if (metricsSection) {
 
   observer.observe(metricsSection);
 }
+
+// 6. Scrollspy: destaca em branco o item da navbar referente à seção visível
+const navLinks = document.querySelectorAll('.nav-link');
+const spySections = document.querySelectorAll('section[id]');
+
+function setActiveNavLink(id) {
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+  });
+}
+
+if (spySections.length && navLinks.length) {
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setActiveNavLink(entry.target.id);
+      }
+    });
+  }, {
+    // Faixa próxima ao topo da viewport (logo abaixo do header fixo)
+    rootMargin: '-45% 0px -50% 0px',
+    threshold: 0
+  });
+
+  spySections.forEach(section => spyObserver.observe(section));
+}
